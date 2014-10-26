@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<article>
+  <h1>
+    {{ page.title }}
+  </h1>
+  <div class="center">
+    <p class="meta">{{ page.date | date: "%Y년 %m월 %d일" }}</p>
+  </div>
+
+  <div class="post" id="post">
+  {{ content }}
+  </div>
+    {% if page.tags.size > 0 %}
+        {% capture tags_content %} <ul class="tags post-tags cf"> {% if page.tags.size == 1 %} {% else %} {% endif %} {% endcapture %}
+        {% for page_tag in page.tags %}
+            {% for data_tag in site.data.tags %}
+                {% if data_tag.slug == page_tag %}
+                    {% assign tag = data_tag %}
+                {% endif %}
+            {% endfor %}
+            {% if tag %}
+                {% capture tags_content_temp %}{{ tags_content }}<li><a href="/tag/{{ tag.slug }}/">{{ tag.name }}</a></li>{% if forloop.last == false %} {% endif %}{% endcapture %}
+                {% assign tags_content = tags_content_temp %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% assign tags_content = '' %}
+    {% endif %}
+
+  <p id="post-meta">{{ tags_content }}</ul></p>
+</article>
+
+<section class="post-footer">
+    <!-- <img src="/images/rss.jpg" alt="RSS" style="border-width:0" /> -->
+  <a href="http://prose.io/#kalkin7/kalkin7.github.io/edit/master/{{ page.path }}" target="_blank" class="pull-right"><span class="icon-check-circle" style="font-size:1.1em"></span></a>
+</section>
+
+<div class="separator"></div>
+{% include recent-posts.html %}
+
+{% include related-posts.html %}
+
+<br /><br /><hr /><br />
+{% include disqus-button-03.md %}
+
+<!--
+<script type="text/javascript">
+  var disqus_shortname = 'kalkingithub';
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+     (function () {
+         var s = document.createElement('script'); s.async = true;
+         s.type = 'text/javascript';
+         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+     }());
+</script> -->
