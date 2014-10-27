@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: 전체글목록 @ Kalkin's Blog
-description: Kalkin's Blog 전체글목록
+title: 최근변경글 @ Kalkin's Wiki
+description: Kalkin's Blog 최근변경글
 permalink: /archive/
 ---
 

@@ -6,7 +6,7 @@ lsi: false
 
 permalink: /:year/:month/:day/:title/
 
-url: http://www.kalkinblog.tk
+url: http://wiki.kalkinblog.tk
 
 # Use kramdown as markdown parser engine.
 markdown:      kramdown

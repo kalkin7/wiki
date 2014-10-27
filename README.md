@@ -1,1 +1,1 @@
-Jekyll website serving [Kalkin's Blog](http://www.kalkinblog.tk/).
+Jekyll website serving [Kalkin's Wiki](http://wiki.kalkinblog.tk/).
