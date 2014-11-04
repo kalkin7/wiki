@@ -4,7 +4,7 @@ title: Kalkin's Wiki
 safe: true
 lsi: false
 
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:title/
 
 url: http://wiki.kalkinblog.tk
 
