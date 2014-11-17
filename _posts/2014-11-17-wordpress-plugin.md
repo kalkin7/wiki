@@ -1,0 +1,10 @@
+---
+layout: post
+title: 워드프레스 플러그인
+description: "워드프레스 플러그인 정보 모음"
+category: blog
+tags: [ blog, wordpress ]
+published: true
+---
+
+- [Ultimate Category Excluder](http://wordpress.org/plugins/ultimate-category-excluder/): 프론트 페이지, 글목록, RSS 피드, 검색 결과에서 특정 카테고리 제외
