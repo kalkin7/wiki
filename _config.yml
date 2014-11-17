@@ -18,7 +18,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: true
+  enable_coderay: true
 
   coderay:
     coderay_wrap:              div
