@@ -68,7 +68,10 @@ article h1{margin-bottom:0;line-height:120%;text-align:center;}
 .site .meta{display:inline-block;color:#666;border-top:1px solid #ccc;*/margin-top:4px;padding:4px 8px;margin-bottom:2em;}
 .convinced{margin:6em 0 4em 0;}
 .post ul, .post ol{margin-left:1.35em;}
-.post code{background-color:#EAEAEA;padding:0 .2em;}
+.post code{font-family:나눔고딕코딩,NanumGothicCoding,Consolas,Monaco,Lucida Console,monospace;font-size:14px;font-size:1rem;line-height:2}
+.post pre{background:#f3f3f3;border-left:4px solid #73B1D2;font-size:14px;font-size:1rem;line-height:1.714285714;font-family:나눔고딕코딩,NanumGothicCoding,Monaco,Consolas,Lucida Console,monospace;margin-bottom:18px;margin-bottom:1.286rem;margin-left:10px;margin-left:0.7143rem;margin-right:10px;margin-right:0.7143rem;
+padding:12px 18px;padding:0.8571rem 1.286rem;overflow:auto;max-width:100%}
+.post pre code{display:block}
 pre.terminal{padding:1px 1px 1px 8px;border:1px solid #000;background-color:#333;color:#FFF;}
 pre.terminal code{background-color:#333;}
 blockquote{margin:1em .5em;color:#666;border-left:4px solid #3073b3;padding-left:1em;}
