@@ -13,20 +13,17 @@ markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 2..6
+ auto_ids: true
+ footnote_nr: 1
+ entity_output: as_char
+ toc_levels: 2..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: true
+ enable_coderay: true
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+ coderay:
+ coderay_line_numbers: nil
+ coderay_css: style
+
 
 gems:
   - jekyll-sitemap
