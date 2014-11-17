@@ -33,3 +33,9 @@
 
 - slug: phone
   name: 핸드폰
+
+- slug: book
+  name: 책
+
+- slug: wordpress
+  name: 워드프레스
