@@ -38,6 +38,21 @@ fdfeedburner.php 파일에서 다음 코드를 주석 처리한다.
 
 **3**\. style.css에 다음 코드를 추가한다.
 
+{% highlight css %}
+div.sd-wrapper{padding-top:10px;}
+div.sd-wrapper div.sd-block{border-top:1px solid rgba(0, 0, 0, 0.13);margin:0;padding:10px 0 5px;width:100% !important;}
+.sd-wrapper h3{background:none repeat scroll 0 0 rgba(0, 0, 0, 0);border:medium none;float:left;font-family:나눔고딕,"맑은 고딕",NanumGothic,"Malgun Gothic",Arial,sans-serif;font-size:14px;font-weight:bold;letter-spacing:0;line-height:1;margin:3px 0;padding:0;position:static;text-transform:none;width:15.625%;}
+.sd-content ul{list-style:none outside none !important;margin:0 0 0.7em !important;padding:0 !important;}
+.sd-content ul li{margin:0 !important;padding:0;}
+.sd-content ul li{display:inline;}
+.sd-content ul li a.sd-button:before{display:inline-block;position:relative;text-align:center;top:-2px;vertical-align:top;}
+.sd-social-icon .sd-content ul li a.sd-button, .sd-content ul li a.sd-button, .sd-content ul li.advanced a.share-more, .sd-wrapper .sd-content ul li a.sd-button{background:none repeat scroll 0 0 #F8F8F8;border:1px solid #CCCCCC;border-radius:3px;box-shadow:0 1px 0 rgba(0, 0, 0, 0.08);color:#777777 !important;display:inline-block;font-family:나눔고딕,"맑은 고딕",NanumGothic,"Malgun Gothic","Open Sans",sans-serif;font-size:13px;font-weight:normal;line-height:1;margin:0 5px 5px 0;padding:4px 5px 4px 5px;text-decoration:none !important;text-shadow:none;}
+.sd-content > ul > li > a.sd-button{box-shadow:none;padding:3px 6px 0 3px;vertical-align:top;}
+.sd-content ul li a.sd-button:hover, .sd-content ul li a.sd-button:active, .sd-content ul li a.sd-button:hover, .sd-content ul li a.sd-button:active, .sd-content > ul > li > a.sd-button:hover, .sd-content > ul > li > a.sd-button:active, .sd-content > ul > li .digg_button > a:hover{background:none repeat scroll 0 0 #FAFAFA;border:1px solid #888888 !important;color:#555555;}
+.sd-social-icon-text .sd-content ul li a.sd-button:active{box-shadow:0 1px 0 rgba(0, 0, 0, 0.16) inset;}
+.sd-content ul li[class*="share-"] a:hover{border:medium none;opacity:0.6;}
+{% endhighlight %}
+
 ~~~ css
 div.sd-wrapper{padding-top:10px;}
 div.sd-wrapper div.sd-block{border-top:1px solid rgba(0, 0, 0, 0.13);margin:0;padding:10px 0 5px;width:100% !important;}
