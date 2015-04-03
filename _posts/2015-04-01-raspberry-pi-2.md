@@ -50,6 +50,7 @@ published: true
 ## 라즈베리파이 2를 미디어 플레이어로 만들기
 
 ### 준비물
+
 – 라즈베리파이2
 – HDMI 케이블
 – 4GB 이상의 Micro SD 카드
@@ -72,6 +73,62 @@ published: true
 4. Micro SD 카드를 리더기등을 이용해서 윈도우즈 인식시킨 후 Win32DiskImager를 실행한다.
 5. Win32DiskImager에서 Micro SD 카드가 인식된 드라이브 레터를 선택한 후, Openelec 최신 이미지를 불러오고 하단의 **write**버튼을 클릭한다.
 6. 필요에 따라 config.txt 파일을 편집해서 설정을 조정한다.
+
+
+### Openelec config.txt 수정을 통한 성능 향상
+
+먼저 gpu에 할당할 램의 양을 수정한다.
+
+**gpu_mem_1024=256** 을 찾아서 다음과 같이 수정한다.
+
+pu_mem_1024=320
+
+다음은 오버클럭킹이다. 다음 값을 수정해서 오버클럭킹을 할 수 있다. 아래가 기본값이다. 
+
+arm_freq=700
+core_freq=250 
+sdram_freq=400
+over_voltage=0
+
+제조사에서 제공하는 프리셋은 다음과 같다.
+
+**1\. Medium 모드**
+
+arm_freq=900
+core_freq=333 
+sdram_freq=450
+over_voltage=2
+
+**2\. High 모드**
+
+arm_freq=950
+core_freq=450 
+sdram_freq=450
+over_voltage=6
+
+**3\. Turbo 모드**
+
+arm_freq=1000
+core_freq=500 
+sdram_freq=500
+over_voltage=6
+
+나는 [웹상의 검색을 통해 얻은 정보](http://iluku.net/blog/archives/3120)로 다음과 같이 세팅했다.
+
+arm_freq=1000
+core_freq=500
+sdram_freq=500
+over_voltage=2
+
+arm_freq_min=400
+sdram_freq_min=250
+core_freq_min=250
+
+여기에 추가적으로 다음 세팅도 설정했다.
+
+initial_turbo=30
+
+
 
 
 ### MPEG-2, VC1 라이센스 적용
