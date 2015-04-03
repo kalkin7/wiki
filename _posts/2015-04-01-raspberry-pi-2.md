@@ -81,52 +81,52 @@ published: true
 
 **gpu_mem_1024=256** 을 찾아서 다음과 같이 수정한다.
 
-pu_mem_1024=320
+**gpu_mem_1024=320**
 
 다음은 오버클럭킹이다. 다음 값을 수정해서 오버클럭킹을 할 수 있다. 아래가 기본값이다. 
 
-arm_freq=700
-core_freq=250 
-sdram_freq=400
-over_voltage=0
+	arm_freq=700
+	core_freq=250
+	sdram_freq=400
+	over_voltage=0
 
 제조사에서 제공하는 프리셋은 다음과 같다.
 
 **1\. Medium 모드**
 
-arm_freq=900
-core_freq=333 
-sdram_freq=450
-over_voltage=2
+	arm_freq=900
+	core_freq=333 
+	sdram_freq=450
+	over_voltage=2
 
 **2\. High 모드**
 
-arm_freq=950
-core_freq=450 
-sdram_freq=450
-over_voltage=6
+	arm_freq=950
+	core_freq=450 
+	sdram_freq=450
+	over_voltage=6
 
 **3\. Turbo 모드**
 
-arm_freq=1000
-core_freq=500 
-sdram_freq=500
-over_voltage=6
+	arm_freq=1000
+	core_freq=500 
+	sdram_freq=500
+	over_voltage=6
 
-나는 [웹상의 검색을 통해 얻은 정보](http://iluku.net/blog/archives/3120)로 다음과 같이 세팅했다.
+나는 [검색을 통해 얻은 정보](http://iluku.net/blog/archives/3120)로 다음과 같이 세팅했다.
 
-arm_freq=1000
-core_freq=500
-sdram_freq=500
-over_voltage=2
+	arm_freq=1000
+	core_freq=500
+	sdram_freq=500
+	over_voltage=2
 
-arm_freq_min=400
-sdram_freq_min=250
-core_freq_min=250
+	arm_freq_min=400
+	sdram_freq_min=250
+	core_freq_min=250
 
 여기에 추가적으로 다음 세팅도 설정했다.
 
-initial_turbo=30
+	initial_turbo=30
 
 
 
