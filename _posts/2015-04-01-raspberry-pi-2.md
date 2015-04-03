@@ -77,13 +77,11 @@ published: true
 
 ### Openelec config.txt 수정을 통한 성능 향상
 
-먼저 gpu에 할당할 램의 양을 수정한다.
+먼저 **gpu에 할당할 램의 양**을 수정한다.
 
-**gpu_mem_1024=256** 을 찾아서 다음과 같이 수정한다.
+**gpu_mem_1024**의 값을 **256**에서 **320**으로 수정한다.
 
-**gpu_mem_1024=320**
-
-다음은 오버클럭킹이다. 다음 값을 수정해서 오버클럭킹을 할 수 있다. 아래가 기본값이다. 
+다음은 **오버클럭킹**이다. 다음 값을 수정해서 오버클럭킹을 할 수 있다. 아래가 기본값이다. 
 
 	arm_freq=700
 	core_freq=250
@@ -124,10 +122,19 @@ published: true
 	sdram_freq_min=250
 	core_freq_min=250
 
-여기에 추가적으로 다음 세팅도 설정했다.
+여기에 추가적으로 다음 설정도 적용했다.
 
 	initial_turbo=30
 
+
+또한 다음 설정도 적용했다.
+
+	# 단일 USB 외장하드 인식
+	max_usb_current=2
+	safe_mode_gpio=4
+
+	# 무지개 부팅 화면 삭제
+	disable_splash=1
 
 
 
