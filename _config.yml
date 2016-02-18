@@ -9,7 +9,6 @@ permalink: /:title/
 url: http://wiki.kalkinblog.tk
 
 # Use kramdown as markdown parser engine.
-highlighter: pygments
 markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
 markdown_ext:  markdown,mkd,mkdn,md
 
