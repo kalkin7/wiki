@@ -4,7 +4,7 @@ title: Kalkin's Wiki
 safe: true
 lsi: false
 
-permalink: /:categories/:title/
+permalink: /:title/
 
 url: http://wiki.kalkinblog.tk
 
@@ -36,6 +36,7 @@ kramdown:
   #   coderay_css:               style
 
 gems:
+  - jekyll-paginate
   - jekyll-sitemap
 
 timezone: Asia/Seoul
@@ -53,3 +54,5 @@ compress_html:
   endings: all
   ignore:
     envs: [local]
+
+exclude: ['Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md', 'CNAME', 'node_modules', 'gulpfile.js', 'package.json', 'new_tag.bat', 'git_push.bat', 'git_link_update.bat', 'git_blog_update.bat', 'git_pull.bat', 'jekyll watch.bat', 'chcp 949.bat', 'jekyll watch xp.bat' ]
