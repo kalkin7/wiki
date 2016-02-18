@@ -1,2 +1,9 @@
 _site/
-.backup
+_drafts\
+git_wiki_update.bat
+git_link_update.bat
+git_push.bat
+jekyll watch xp.bat
+chcp 949.bat
+jekyll watch.bat
+search.json
