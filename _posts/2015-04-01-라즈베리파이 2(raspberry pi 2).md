@@ -4,6 +4,7 @@ title: 라즈베리파이 2
 description: "라즈베리파이 정보 모음. Kodi 머신으로 쓸 때의 정보 위주"
 category: IT
 tags: [ raspberry-pi ]
+permalink: raspberry-pi-2
 published: true
 ---
 
